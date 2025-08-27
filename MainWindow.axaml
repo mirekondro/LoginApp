@@ -2,18 +2,33 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         x:Class="LoginApp.Views.MainWindow"
         Title="Login / Registrace"
-        Width="400" Height="300">
-    
+        Width="400" Height="400">
+
     <StackPanel Margin="20" Spacing="10">
-        <TextBlock Text="Uživatelské jméno:"/>
-        <TextBox x:Name="UsernameBox"/>
+        <StackPanel x:Name="LoginPanel" Spacing="10">
+            <TextBlock Text="Uživatelské jméno:"/>
+            <TextBox x:Name="LoginUsernameBox"/>
+            <TextBlock Text="Heslo:"/>
+            <TextBox x:Name="LoginPasswordBox" PasswordChar="*"/>
+            <StackPanel Orientation="Horizontal" Spacing="10">
+                <Button x:Name="LoginButton" Content="Přihlášení" Width="120"/>
+                <Button x:Name="ShowRegisterButton" Content="Registrace" Width="120"/>
+            </StackPanel>
+        </StackPanel>
 
-        <TextBlock Text="Heslo:"/>
-        <TextBox x:Name="PasswordBox" PasswordChar="*"/>
-
-        <StackPanel Orientation="Horizontal" Spacing="10">
-            <Button x:Name="RegisterButton" Content="Registrace" Width="120"/>
-            <Button x:Name="LoginButton" Content="Přihlášení" Width="120"/>
+        <StackPanel x:Name="RegisterPanel" Spacing="10" IsVisible="False">
+            <TextBlock Text="Jméno:"/>
+            <TextBox x:Name="FirstNameBox"/>
+            <TextBlock Text="Příjmení:"/>
+            <TextBox x:Name="LastNameBox"/>
+            <TextBlock Text="Email:"/>
+            <TextBox x:Name="EmailBox"/>
+            <TextBlock Text="Heslo:"/>
+            <TextBox x:Name="RegisterPasswordBox" PasswordChar="*"/>
+            <StackPanel Orientation="Horizontal" Spacing="10">
+                <Button x:Name="RegisterButton" Content="Dokončit registraci" Width="150"/>
+                <Button x:Name="BackToLoginButton" Content="Zpět" Width="80"/>
+            </StackPanel>
         </StackPanel>
 
         <TextBlock x:Name="StatusText" Foreground="Red"/>

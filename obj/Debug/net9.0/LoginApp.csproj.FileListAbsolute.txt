@@ -71,3 +71,4 @@
 /Users/miroslavondrousek/LoginApp/obj/Debug/net9.0/LoginApp.pdb
 /Users/miroslavondrousek/LoginApp/obj/Debug/net9.0/LoginApp.genruntimeconfig.cache
 /Users/miroslavondrousek/LoginApp/obj/Debug/net9.0/ref/LoginApp.dll
+/Users/miroslavondrousek/LoginApp/obj/Debug/net9.0/LoginApp.sourcelink.json
