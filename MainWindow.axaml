@@ -2,13 +2,22 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         x:Class="LoginApp.Views.MainWindow"
         Title="Login / Registrace"
-        Width="400" Height="400">
+        Width="400" Height="450">
 
     <StackPanel Margin="20" Spacing="10">
+
+        <StackPanel Orientation="Horizontal" Spacing="10">
+            <TextBlock x:Name="LanguageLabel" Text="Jazyk:" VerticalAlignment="Center"/>
+            <ComboBox x:Name="LanguageCombo" Width="150">
+                <ComboBoxItem Content="Čeština"/>
+                <ComboBoxItem Content="English"/>
+            </ComboBox>
+        </StackPanel>
+
         <StackPanel x:Name="LoginPanel" Spacing="10">
-            <TextBlock Text="Email:"/>
+            <TextBlock x:Name="LoginUserLabel" Text="Email:"/>
             <TextBox x:Name="LoginUsernameBox"/>
-            <TextBlock Text="Heslo:"/>
+            <TextBlock x:Name="LoginPassLabel" Text="Heslo:"/>
             <TextBox x:Name="LoginPasswordBox" PasswordChar="*"/>
             <StackPanel Orientation="Horizontal" Spacing="10">
                 <Button x:Name="LoginButton" Content="Přihlášení" Width="120"/>
@@ -17,13 +26,13 @@
         </StackPanel>
 
         <StackPanel x:Name="RegisterPanel" Spacing="10" IsVisible="False">
-            <TextBlock Text="Jméno:"/>
+            <TextBlock x:Name="FirstNameLabel" Text="Jméno:"/>
             <TextBox x:Name="FirstNameBox"/>
-            <TextBlock Text="Příjmení:"/>
+            <TextBlock x:Name="LastNameLabel" Text="Příjmení:"/>
             <TextBox x:Name="LastNameBox"/>
-            <TextBlock Text="Email:"/>
+            <TextBlock x:Name="EmailLabel" Text="Email:"/>
             <TextBox x:Name="EmailBox"/>
-            <TextBlock Text="Heslo:"/>
+            <TextBlock x:Name="RegPassLabel" Text="Heslo:"/>
             <TextBox x:Name="RegisterPasswordBox" PasswordChar="*"/>
             <StackPanel Orientation="Horizontal" Spacing="10">
                 <Button x:Name="RegisterButton" Content="Dokončit registraci" Width="150"/>
