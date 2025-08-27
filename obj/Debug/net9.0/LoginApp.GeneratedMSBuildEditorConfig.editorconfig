@@ -26,3 +26,6 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
 [/Users/miroslavondrousek/LoginApp/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/Users/miroslavondrousek/LoginApp/WelcomeWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

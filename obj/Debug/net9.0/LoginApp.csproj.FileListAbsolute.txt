@@ -72,3 +72,4 @@
 /Users/miroslavondrousek/LoginApp/obj/Debug/net9.0/LoginApp.genruntimeconfig.cache
 /Users/miroslavondrousek/LoginApp/obj/Debug/net9.0/ref/LoginApp.dll
 /Users/miroslavondrousek/LoginApp/obj/Debug/net9.0/LoginApp.sourcelink.json
+/Users/miroslavondrousek/LoginApp/bin/Debug/net9.0/Newtonsoft.Json.dll
